@@ -5833,3 +5833,8 @@ node_modules/.bin/color-support.ps1
 node_modules/.bin/color-support.cmd
 node_modules/.bin/color-support
 node_modules/yargs/yargs.mjs
+.env
+client/
+Mern-Stack-Ecommerce/
+.env
+.env
