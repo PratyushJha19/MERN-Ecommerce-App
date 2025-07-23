@@ -35,7 +35,7 @@ export const createSessionController = async (req, res) => {
     const order = new OrderModel({
       products: products.map((p) => p._id),
       buyer: userId,
-      payment: {}, // Will be updated after payment via admin or webhook (optional)
+      payment: "Failed", // Will be updated after payment via admin or webhook (optional)
       status: "Not Processed",
     });
 
