@@ -20,7 +20,10 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 // Middlewares
-app.use(cors());
+app.use(  cors({
+    origin: "https://mern-ecommerce-front-end.onrender.com", // ✅ frontend URL
+    credentials: true, // ✅ if you're using cookies or auth headers
+  }));
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
